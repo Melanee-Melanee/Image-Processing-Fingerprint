@@ -5,6 +5,11 @@ plt.figure(figsize=(16, 16))
 
 # Convert image to grayscale
 img_gs = cv2.imread('cat.png', cv2.IMREAD_GRAYSCALE)
+
+print("Image Properties")
+print("- Number of Pixels: " + str(img_gs.size))
+print("- Shape/Dimensions: " + str(img_gs.shape))
+
 cv2.imwrite('gs.jpg', img_gs)
 
 # Apply canny edge detector algorithm on the image to find edges
